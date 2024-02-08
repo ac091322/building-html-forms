@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Building HTML Forms</title>
+</head>
+
+<body>
+  <form method="post">
+    <fieldset>
+      <legend>Add User</legend>
+
+      <div>
+        <label for="fristName">First name</label>
+        <input type="text" id="firstName" name="first_name">
+      </div>
+
+      <div>
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="last_name">
+      </div>
+
+      <div>
+        <label for="emailAddress">Email address</label>
+        <input type="email" id="emailAddress" name="email_address">
+      </div>
+
+      <div>
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="guest">Guest</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Choose your favorite programming language:
+          <label for="html">HTML</label>
+          <input type="radio" id="html" name="pLanguage">
+
+          <label for="css">CSS</label>
+          <input type="radio" name="pLanguage">
+
+          <label fo="javascript">Javascript</label>
+          <input type="radio" id="javascript" name="pLanguage">
+
+          <label for="python">Python</label>
+          <input type="radio" id="python" name="pLanguage">
+        </p>
+      </div>
+
+      <div>
+        <label for="currentDate">Current date</label>
+        <input type="date" id="currentDate" name="current_date">
+      </div>
+
+      <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments">Type something here...</textarea>
+      </div>
+
+      <div>
+        <label for="newsletter">Sign up for newsletter</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+      </div>
+
+      <div>
+        <label for="t&c">Agree to terms and conditions</label>
+        <input type="checkbox" id="t&c" name="t&c" value="t&c">
+      </div>
+
+      <div>
+        <button type="reset">Reset form</button>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
